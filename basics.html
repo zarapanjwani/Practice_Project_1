@@ -119,7 +119,7 @@
             border-radius: 10px; display: flex; justify-content: space-between;
         }
 
-        /* --- CLOCK & SLIDER --- */
+    
         .big-text { font-size: 4rem; font-weight: bold; text-align: center; margin: 20px 0; }
         .slider-box { text-align: center; }
         .slider-box img { width: 100%; border-radius: 15px; margin-bottom: 15px; }
@@ -140,7 +140,6 @@
 </header>
 
 <main>
-    <!-- 1. TO-DO LIST -->
     <section class="project-section active">
         <h2>📝 Task Manager</h2>
         <p>Manage your daily goals easily.</p>
@@ -150,7 +149,6 @@
         <ul id="todo-list"></ul>
     </section>
 
-    <!-- 2. QUOTE GENERATOR -->
     <section class="project-section">
         <h2>✨ Wisdom Generator</h2>
         <p>Get inspired by random famous quotes.</p>
@@ -160,7 +158,6 @@
         <button class="action-btn" onclick="getNewQuote()">Fetch New Quote</button>
     </section>
 
-    <!-- 3. DIGITAL CLOCK -->
     <section class="project-section">
         <h2>⏰ Focus Clock</h2>
         <p>Real-time digital clock for your desk.</p>
@@ -168,7 +165,6 @@
         <p style="text-align: center;">Format: HH:MM:SS</p>
     </section>
 
-    <!-- 4. BG SWITCHER -->
     <section class="project-section">
         <h2>🎨 Layout Colorist</h2>
         <p>Change the interface mood instantly.</p>
@@ -181,7 +177,6 @@
         </div>
     </section>
 
-    <!-- 5. IMAGE SLIDER -->
     <section class="project-section">
         <h2>🖼️ Art Gallery</h2>
         <p>Cycle through high-quality random images.</p>
@@ -196,7 +191,6 @@
 </main>
 
 <script>
-    // --- 0. CORE PAGE LOGIC (Navigation & Theme) ---
     function showProject(index) {
         const sections = document.querySelectorAll('.project-section');
         const buttons = document.querySelectorAll('#nav-menu button');
@@ -218,7 +212,6 @@
         document.documentElement.style.setProperty('--primary', color);
     }
 
-    // --- 1. TO-DO LOGIC ---
     function addTask() {
         const input = document.getElementById('todo-in');
         const list = document.getElementById('todo-list');
@@ -229,7 +222,6 @@
         input.value = "";
     }
 
-    // --- 2. QUOTE LOGIC ---
     async function getNewQuote() {
         const display = document.getElementById('quote-display');
         display.innerText = "Searching for wisdom...";
