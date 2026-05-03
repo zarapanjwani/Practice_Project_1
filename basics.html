@@ -241,13 +241,10 @@
             display.innerText = "Oops! Check internet and try again.";
         }
     }
-
-    // --- 3. CLOCK LOGIC ---
     setInterval(() => {
         document.getElementById('clock-txt').innerText = new Date().toLocaleTimeString();
     }, 1000);
-
-    // --- 5. SLIDER LOGIC ---
+    
     let imgId = 20;
     function moveSlide(step) {
         imgId += step;
